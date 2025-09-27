@@ -23,10 +23,10 @@ public class TestBase {
 
 
     @BeforeSuite                     // для запуска в одном окне
-    public void setUp(){
+    public void setUp() {
         app.init();
-        logger.info(">>> Running tests on browser: {}", app.getBrowser()); // или через getter
-
+        System.out.println(">>> Running tests on browser: " + app.getBrowser());
+        logger.info(">>> Running tests on browser: {}", app.getBrowser());
     }
     @AfterSuite                     // для запуска в одном окне
     public void terDown(){
