@@ -7,14 +7,11 @@
 *.ipr
 out/
 
-# Gradle
-• gradle/
-build/
-
-# IntelliJ
-.idea/
-*.iml
-out/
+/gradle/
+settings.gradle
+\gradlew
+gradlew/
+gradlew.bat
 
 *.log
 *.png
