@@ -14,8 +14,8 @@ import java.time.Duration;
 
 public class ApplicationManager{
 
-    String browser;
-    WebDriver driver;
+    private String browser;
+    private WebDriver driver;
     Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
 
     HomePageHelper home;
@@ -63,5 +63,9 @@ public class ApplicationManager{
 
     public ContactHelper getContact() {
         return contact;
+    }
+
+    public String getBrowser() {
+        return browser;
     }
 }
